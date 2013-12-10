@@ -122,14 +122,18 @@ class RadAtomWordpressImages {
     {
         $new_input = array();
         if( isset( $input['image_default_link'] ) )
+        {
             $new_input['image_default_link'] = absint( $input['image_default_link'] );
-
+        }
         if( isset( $input['image_default_size'] ) )
+        {
             $new_input['image_default_size'] = absint( $input['image_default_size'] );
+        }
 
         if( isset( $input['image_default_align'] ) )
+        {
             $new_input['image_default_align'] = absint( $input['image_default_align'] );
-
+        }
 
         return $new_input;
     }
